@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./gallery.css">
+    <script src="https://kit.fontawesome.com/859da92113.js" crossorigin="anonymous"></script>
+    <script src="./gallery.js" defer></script>
+</head>
+<body>
+    <div class="flex col h-100 w-100">
+        <h1><i class="fa-solid fa-images" title="random clicks"> random clicks</i></h1>
+        <div class="flex gallery-container my-style">
+            <img src="./assets/IMG_0627.JPG" alt="JC-1" data-full="./assets/IMG_0627.JPG" data-caption="Image 1">
+            <img src="./assets/IMG_0629.JPG" alt="JC-2" data-full="./assets/IMG_0629.JPG" data-caption="Image 2">
+            <img src="./assets/IMG_20231223_162136.jpg" alt="JC-3" data-full="./assets/IMG_20231223_162136.jpg" data-caption="Image 3">
+            <img src="./assets/IMG_20231223_162134.jpg" alt="JC-4" data-full="./assets/IMG_20231223_162134.jpg" data-caption="Image 4">
+            <img src="./assets/IMG_20231027_001822.jpg" alt="JC-5" data-full="./assets/IMG_20231027_001822.jpg" data-caption="Image 5">
+            <img src="./assets/IMG20231223103755.jpg" alt="JC-6" data-full="./assets/IMG20231223103755.jpg" data-caption="Image 6">
+            <img src="./assets/IMG-20231226-WA0048.jpg" alt="JC-7" data-full="./assets/IMG-20231226-WA0048.jpg" data-caption="Image 7">
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <button class="nav-btn prev-btn" id="prevBtn">&#8592;</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="nav-btn next-btn" id="nextBtn">&#8594;</button>
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+</body>
+</html>
